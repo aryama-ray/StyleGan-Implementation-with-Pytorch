@@ -28,9 +28,11 @@ The implementation focuses on loading a pretrained StyleGAN generator and sampli
 
 The original **StyleGAN** architecture (proposed by NVIDIA in 2018) introduces a novel approach to generator design:
 
+![style_gan_generator](https://github.com/user-attachments/assets/97b251d3-5195-4597-bba5-8ef4fae6eb58)
+
 - **Mapping Network**:  
-  Maps an input latent vector \( z \in \mathcal{Z} \) (sampled from a normal distribution) to an intermediate latent space \( w \in \mathcal{W} \). This allows for disentangled and controllable image generation.
-  Consists of 8 multiple fully connected layers(Multi-layer perceptron).
+  - Maps an input latent vector (sampled from a normal distribution) to an intermediate latent space. This allows for disentangled and controllable image generation.
+  - Consists of 8 multiple fully connected layers(Multi-layer perceptron).
 
 - **Synthesis Network**:
   - Begins from a learned constant (not noise).
