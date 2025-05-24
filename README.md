@@ -38,6 +38,9 @@ The original **StyleGAN** architecture (proposed by NVIDIA in 2018) introduces a
 - ✅ Random latent vector generation.
 - ✅ Built custom style gan architecture for low resolution image generation.The systnesis network used Learned constant tensor of size 4 X 4 X 448. Then Upsamples progressively to reach 128×128 resolution. Final output size is 128 * 128 * 3
 - ✅ Image visualization using Matplotlib.
+- Imgae output :
+- ![output](https://github.com/user-attachments/assets/b33f7a24-cd6b-40ae-94a6-0eb1f4870a58)
+
 
 ## Paper Reference:
 Karras, T., Laine, S., & Aila, T. (2018). A Style-Based generator architecture for generative adversarial networks. arXiv (Cornell University). https://doi.org/10.48550/arxiv.1812.04948
