@@ -24,6 +24,25 @@ The implementation focuses on loading a pretrained StyleGAN generator and sampli
 - ✅ Random latent vector generation.
 - ✅ Image visualization using Matplotlib.
 
+## 📐 Model Architecture: StyleGAN
+
+The original **StyleGAN** architecture (proposed by NVIDIA in 2018) introduces a novel approach to generator design:
+
+- **Mapping Network**:  
+  Maps an input latent vector \( z \in \mathcal{Z} \) (sampled from a normal distribution) to an intermediate latent space \( w \in \mathcal{W} \). This allows for disentangled and controllable image generation.
+  Consists of 8 multiple fully connected layers(Multi-layer perceptron).
+
+- **Synthesis Network**:
+  - Begins from a learned constant (not noise).
+  - Generates the image using a series of convolutional layers.
+  - Style modulation is applied at each layer using AdaIN (Adaptive Instance Normalization).
+  - Each layer is modulated by the style vector w and stochastic noise. Noise is injected at every layer to add stochastic details (e.g., hair strands, skin pores).
+
+- **Progressive Growing**:
+  - Images are generated at increasing resolutions during training starting from 4 X 4, then progressive growing till 1024 X 1024
+  - Helps improve training stability and image quality.
+
+
 
 
 
