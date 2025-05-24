@@ -7,15 +7,9 @@
 Karras, T., Laine, S., & Aila, T. (2018). A Style-Based generator architecture for generative adversarial networks. arXiv (Cornell University). https://doi.org/10.48550/arxiv.1812.04948
 
 
-## Code Reference:
-https://www.digitalocean.com/community/tutorials/implementation-stylegan-from-scratch
-
-https://github.com/kevinMEH/simple-stylegan/tree/main
-
 ## Dataset:
 
 Flickr-Faces-HQ Dataset (FFHQ)
-
 https://www.kaggle.com/datasets/arnaud58/flickrfaceshq-dataset-ffhq
 
 # StyleGAN Pretrained Weights Image Generation
@@ -30,9 +24,6 @@ The implementation focuses on loading a pretrained StyleGAN generator and sampli
 - ✅ Random latent vector generation.
 - ✅ Image visualization using Matplotlib.
 
-## 🧰 Requirements
 
-Install the following dependencies before running the notebook:
 
-```bash
-pip install torch torchvision numpy matplotlib
+
